@@ -41,4 +41,13 @@ SELECT COUNT(*)
 FROM `teachers` AS `t`
 WHERE `t`.`phone` IS NULL;
 
-
+/*biglietti da visita molto(poco) dettagliati*/
+SELECT CONCAT(
+		`t`.`name`,
+        " ",
+		`t`.`surname`,
+        " - Office: ",
+		`t`.`office_number`
+	) AS `cards`
+FROM `teachers` as `t`
+WHERE 1;
